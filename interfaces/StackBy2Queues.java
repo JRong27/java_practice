@@ -52,7 +52,7 @@ public class StackBy2Queues {
         int ret = A.poll();
         // 唯一与 pop 和 top唯一不同之处，要把栈顶元素继续留在栈中
         B.offer(ret);
-        // 交换A B身份，地址
+        // 交换A B身份，即地址
         swapAB();
         return ret;
     }
