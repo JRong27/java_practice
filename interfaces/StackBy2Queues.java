@@ -26,7 +26,7 @@ public class StackBy2Queues {
         // 循环结束，A 中应有 1 个元素，即应被出栈的元素
         // 队尾元素充当栈底元素
         int ret = A.poll();
-        // 交换A B身份（地址），A 还是那个“栈”，B 被自动回收
+        // 交换A B身份（地址），A 始终是那个“栈”，B 被自动回收
         swapAB();
         return ret;
     }
@@ -52,7 +52,7 @@ public class StackBy2Queues {
         int ret = A.poll();
         // 唯一与 pop 和 top唯一不同之处，要把栈顶元素继续留在栈中
         B.offer(ret);
-        // 交换A B身份，即地址
+        // 交换A B身份，地址
         swapAB();
         return ret;
     }
