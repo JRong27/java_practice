@@ -1,6 +1,8 @@
+port java.util.ArrayList;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class gridShift {
 
@@ -10,7 +12,9 @@ public class gridShift {
         for (int i = 0; i < 3; i++) {
             System.out.println(Arrays.toString(grid[i]));
         };
-        int k = 5;
+        System.out.println("请输入移动位数：");
+        Scanner scanner = new Scanner(System.in);
+        int k = scanner.nextInt();
 
 
         int[] nums = new int[grid.length * grid[0].length];
