@@ -189,7 +189,7 @@ public class InterviewTree {
             return false;
         }
         // 两个非空节点值相等
-        return isMirror(n1.left, n1.right) && isMirror(n2.left, n2.right);
+        return isMirror(n1.left, n2.right) && isMirror(n2.left, n1.right);
     }
     // 注意不可在第二步直接判断如下语句
     // if (n1.val == n2.val)
